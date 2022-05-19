@@ -2,15 +2,10 @@ package ru.gb;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import ru.gb.config.JpaConfig;
-import ru.gb.dao.manufacturer.ManufacturerDao;
-
-import ru.gb.dao.product.OldJdbcProductDao;
+import ru.gb.config.HibernateConfig;
 import ru.gb.dao.product.ProductDao;
-//import ru.gb.entity.Manufacturer;
 import ru.gb.entity.Product;
 
-import java.util.Arrays;
 
 public class ShopApp {
     public static void main(String[] args) {
@@ -22,7 +17,7 @@ public class ShopApp {
 //        }
 //        System.out.println(manufacturerDao.findNameById(3L));
 
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(JpaConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(HibernateConfig.class);
         ProductDao productDao = context.getBean(ProductDao.class);
 //        System.out.println(productDao.findNameById(3L));
 //        OldJdbcProductDao oldJdbcProductDao = new OldJdbcProductDao();

@@ -1,7 +1,6 @@
 package ru.gb.dao.manufacturer;
 
 import ru.gb.entity.Manufacturer;
-
 import java.sql.*;
 import java.util.HashSet;
 import java.util.Set;
