@@ -2,7 +2,6 @@ package ru.gb.dao.manufacturer;
 
 import lombok.RequiredArgsConstructor;
 import ru.gb.entity.Manufacturer;
-
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

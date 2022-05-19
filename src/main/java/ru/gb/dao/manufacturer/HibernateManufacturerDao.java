@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.List;
 
 
-//@Component
+@Component
 @RequiredArgsConstructor
 public class HibernateManufacturerDao implements ManufacturerDao {
 
